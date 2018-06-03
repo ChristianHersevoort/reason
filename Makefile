@@ -38,8 +38,9 @@ all_errors:
 	@ echo "Regenerate all the possible error states for Menhir."
 	@ echo "Warning: This will take a while and use a lot of CPU and memory."
 	@ echo "---"
-	menhir --explain --strict --unused-tokens src/reason-parser/reason_parser.mly --list-errors > src/reason-parser/reason_parser.messages.checked-in
-
+	menhir --explain --strict --update-errors src/reason-parser/reason_parser.messages.checked-in --unused-tokens src/reason-parser/reason_parser.mly --list-errors > src/reason-parser/reason_parser.messages.checked-in.new
+	@ echo "done"
+	mv src/reason-parser/reason_parser.messages.checked-in.new src/reason-parser/reason_parser.messages.checked-in
 # Not all versions of jbuilder have the clean command.
 # jbuilder clean
 clean: clean-tests
