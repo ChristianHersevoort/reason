@@ -458,14 +458,6 @@ parse_pattern: LBRACKET UNDERSCORE RPAREN
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-parse_pattern: LBRACKET UNDERSCORE SEMI RBRACE 
-
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 parse_pattern: LBRACKET WITH 
 ##
 ## Ends in an error in state: 1013.
@@ -714,13 +706,6 @@ parse_pattern: LPAREN LBRACE WITH
 ##
 ## The known suffix of the stack is as follows:
 ## LBRACE 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_pattern: LPAREN LBRACKET UNDERSCORE SEMI RBRACE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -1011,12 +996,6 @@ parse_pattern: LPAREN MODULE UIDENT COLON UIDENT WITH TYPE LIDENT EQUAL LBRACE D
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-parse_pattern: LPAREN MODULE UIDENT COLON UIDENT WITH TYPE LIDENT EQUAL LBRACE DOTDOT RBRACE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
 
 parse_pattern: LPAREN MODULE UIDENT COLON UIDENT WITH TYPE LIDENT EQUAL WITH 
 ##
@@ -1202,13 +1181,6 @@ parse_pattern: LPAREN UIDENT LPAREN WITH
 ##
 ## The known suffix of the stack is as follows:
 ## LPAREN 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_pattern: LPAREN UIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -1428,22 +1400,6 @@ parse_pattern: LPAREN UNDERSCORE COLON LBRACE DOTDOT WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-
-
-parse_pattern: LPAREN UNDERSCORE COLON LIDENT SHARP WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_pattern: LPAREN UNDERSCORE COLON LIDENT UNDERSCORE WHILE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 parse_pattern: LPAREN UNDERSCORE COLON LPAREN MODULE UIDENT COLONGREATER 
 ##
 ## Ends in an error in state: 3273.
@@ -1510,13 +1466,6 @@ parse_pattern: LPAREN UNDERSCORE COLON QUOTE WITH
 ##
 ## The known suffix of the stack is as follows:
 ## QUOTE 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_pattern: LPAREN UNDERSCORE COLON SHARP LIDENT UNDERSCORE WHILE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -1760,13 +1709,6 @@ parse_pattern: UIDENT LPAREN WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-parse_pattern: UIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 parse_pattern: UNDERSCORE BAR WITH 
 ##
 ## Ends in an error in state: 1078.
@@ -1874,13 +1816,6 @@ parse_core_type: LBRACKET BACKQUOTE UIDENT AMPERSAND WITH
 ##
 ## The known suffix of the stack is as follows:
 ## BACKQUOTE ident boption(AMPERSAND) 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LBRACKET BACKQUOTE UIDENT UNDERSCORE AMPERSAND WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -2090,50 +2025,6 @@ parse_core_type: LBRACE DOTDOT WITH
 ## LBRACE DOTDOT 
 ##
 
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LBRACE LIDENT COLON LBRACE DOTDOT RBRACE COMMA WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LBRACE LIDENT COLON QUOTE UIDENT DOT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LBRACE LIDENT COLON QUOTE UIDENT QUOTE LIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LBRACE LIDENT COLON QUOTE UIDENT QUOTE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LBRACE LIDENT COLON QUOTE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LBRACE LIDENT COLON UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 parse_core_type: LBRACE WITH 
 ##
 ## Ends in an error in state: 356.
@@ -2146,20 +2037,6 @@ parse_core_type: LBRACE WITH
 ##
 ## The known suffix of the stack is as follows:
 ## LBRACE 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LIDENT SHARP WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LIDENT UNDERSCORE WHILE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -2216,13 +2093,6 @@ parse_core_type: LPAREN MODULE UIDENT WITH TYPE LIDENT EQUAL LBRACE DOTDOT RBRAC
 ##
 ## The known suffix of the stack is as follows:
 ## lseparated_nonempty_list_aux(AND,with_constraint) AND 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: LPAREN MODULE UIDENT WITH TYPE LIDENT EQUAL LBRACE DOTDOT RBRACE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -2339,13 +2209,6 @@ parse_core_type: QUOTE WITH
 ##
 ## The known suffix of the stack is as follows:
 ## QUOTE 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-parse_core_type: SHARP LIDENT UNDERSCORE WHILE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -2537,20 +2400,6 @@ parse_core_type: WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-interface: CLASS LIDENT COLON NEW LIDENT AND WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: CLASS LIDENT COLON NEW LIDENT RPAREN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 interface: CLASS LIDENT COLON WITH 
 ##
 ## Ends in an error in state: 2750.
@@ -2559,13 +2408,6 @@ interface: CLASS LIDENT COLON WITH
 ##
 ## The known suffix of the stack is as follows:
 ## virtual_flag LIDENT loption(class_type_parameters) COLON 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: CLASS LIDENT PLUS WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -2804,13 +2646,6 @@ interface: INCLUDE LPAREN LPAREN UNDERSCORE COLON UIDENT RPAREN EQUALGREATER WIT
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-interface: INCLUDE LPAREN LPAREN UNDERSCORE COLON UIDENT RPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 interface: INCLUDE LPAREN LPAREN UNDERSCORE COLON UIDENT SEMI 
 ##
 ## Ends in an error in state: 3565.
@@ -2924,20 +2759,6 @@ interface: INCLUDE LPAREN UIDENT DOT WITH
 ##
 ## The known suffix of the stack is as follows:
 ## mod_ext_longident DOT 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: INCLUDE LPAREN UIDENT EQUALGREATER LIDENT WHILE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: INCLUDE LPAREN UIDENT EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -3194,13 +3015,6 @@ interface: INCLUDE LPAREN UIDENT WITH TYPE LIDENT EQUAL UNDERSCORE EQUAL
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-interface: INCLUDE LPAREN UIDENT WITH TYPE LIDENT UNDERSCORE AND 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 interface: INCLUDE LPAREN UIDENT WITH TYPE WITH 
 ##
 ## Ends in an error in state: 1544.
@@ -3258,13 +3072,6 @@ interface: INCLUDE LPAREN UNDERSCORE COLON UIDENT RPAREN EQUALGREATER WITH
 ##
 ## The known suffix of the stack is as follows:
 ## functor_parameters EQUALGREATER 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: INCLUDE LPAREN UNDERSCORE COLON UIDENT RPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -3333,20 +3140,6 @@ interface: INCLUDE LPAREN WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-interface: INCLUDE MODULE TYPE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: INCLUDE MODULE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 interface: INCLUDE UIDENT DOT UIDENT WHILE 
 ##
 ## Ends in an error in state: 935.
@@ -3371,20 +3164,6 @@ interface: INCLUDE UIDENT DOT WITH
 ##
 ## The known suffix of the stack is as follows:
 ## mod_ext_longident DOT 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: INCLUDE UIDENT EQUALGREATER UIDENT COLONGREATER 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-interface: INCLUDE UIDENT EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -3851,13 +3630,6 @@ interface: LET MODULE UIDENT LPAREN UIDENT COLON WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-interface: LET MODULE UIDENT LPAREN UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 interface: LET MODULE UIDENT LPAREN WITH 
 ##
 ## Ends in an error in state: 1351.
@@ -4070,13 +3842,6 @@ interface: TYPE NONREC LET
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-interface: TYPE UIDENT DOT LIDENT UNDERSCORE SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 interface: WITH 
 ##
 ## Ends in an error in state: 3758.
@@ -4097,279 +3862,6 @@ implementation: CLASS LIDENT COLON LIDENT WITH
 ##
 ## The known suffix of the stack is as follows:
 ## clty_longident 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT COLON NEW WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT COLON UNDERSCORE EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT MINUS WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT PLUS WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT QUOTE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE AS UNDERSCORE SEMI WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE AS UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE AS WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE CONSTRAINT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE INHERIT LIDENT RPAREN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE INHERIT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE LBRACKETPERCENTPERCENT WITH RBRACKET WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE PUB LIDENT COLON WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE PUB LIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE PRI WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE PRI VIRTUAL WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE PUB VIRTUAL WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE PUB WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL LIDENT COLON WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL LIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL MUTABLE LIDENT COLON WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL MUTABLE LIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL MUTABLE VIRTUAL LET 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL MUTABLE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL VIRTUAL LIDENT COLON WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL VIRTUAL LIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL VIRTUAL MUTABLE LET 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL VIRTUAL WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE VAL WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LBRACE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LPAREN NEW LIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON LPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON UIDENT DOT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: CLASS LIDENT UNDERSCORE COLON UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: FOR UNDERSCORE IN UIDENT TO UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: FOR UNDERSCORE WHEN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -4435,27 +3927,6 @@ implementation: INCLUDE FUN LPAREN WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: INCLUDE LBRACE CLASS LIDENT COLON NEW LIDENT EQUAL LIDENT RPAREN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT COLON NEW LIDENT EQUAL WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT COLON NEW LIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: INCLUDE LBRACE CLASS LIDENT COLON WITH 
 ##
 ## Ends in an error in state: 2080.
@@ -4509,55 +3980,6 @@ implementation: INCLUDE LBRACE CLASS LIDENT EQUAL WITH
 ##
 ## The known suffix of the stack is as follows:
 ## EQUAL 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT UNDERSCORE COLON LIDENT EQUALGREATER LIDENT RPAREN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT UNDERSCORE COLON LIDENT EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT UNDERSCORE COLON LPAREN NEW LIDENT RPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT UNDERSCORE COLON WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT UNDERSCORE EQUALGREATER LIDENT RPAREN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT UNDERSCORE EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE CLASS LIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -4755,20 +4177,6 @@ implementation: INCLUDE LBRACE EXCEPTION UIDENT EQUAL WITH
 ##
 ## The known suffix of the stack is as follows:
 ## UIDENT EQUAL 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE EXCEPTION UIDENT UNDERSCORE COLON WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: INCLUDE LBRACE EXCEPTION UIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -5535,13 +4943,6 @@ implementation: LBRACE INHERIT BANG WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LBRACE INHERIT CLASS LIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: LBRACE INHERIT CLASS LIDENT WITH 
 ##
 ## Ends in an error in state: 2174.
@@ -5562,27 +4963,6 @@ implementation: LBRACE INHERIT CLASS WITH
 ##
 ## The known suffix of the stack is as follows:
 ## CLASS 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT FUN UNDERSCORE EQUALGREATER LBRACKETPERCENT AND RBRACKET WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT FUN UNDERSCORE EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT FUN UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -5682,13 +5062,6 @@ implementation: LBRACE INHERIT LBRACE LIDENT SEMI
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LBRACE INHERIT LBRACE PERCENT AND WHILE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: LBRACE INHERIT LBRACE WITH 
 ##
 ## Ends in an error in state: 2288.
@@ -5760,13 +5133,6 @@ implementation: LBRACE INHERIT LIDENT SEMI WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LBRACE INHERIT LIDENT UIDENT STAR 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: LBRACE INHERIT LIDENT WITH 
 ##
 ## Ends in an error in state: 2182.
@@ -5788,62 +5154,6 @@ implementation: LBRACE INHERIT LPAREN LIDENT COLON LIDENT WITH
 ##
 ## The known suffix of the stack is as follows:
 ## clty_longident 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON NEW LBRACE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON NEW LIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON NEW LIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON NEW LIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON NEW UIDENT DOT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON NEW UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON NEW WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INHERIT LPAREN LIDENT COLON UNDERSCORE EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -5905,13 +5215,6 @@ implementation: LBRACE INHERIT WITH
 ##
 ## The known suffix of the stack is as follows:
 ## INHERIT 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE INITIALIZER EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -6048,13 +5351,6 @@ implementation: LBRACE LET WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LBRACE LIDENT COLON UIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: LBRACE LIDENT COLON WITH 
 ##
 ## Ends in an error in state: 1671.
@@ -6068,13 +5364,6 @@ implementation: LBRACE LIDENT COLON WITH
 ##
 ## The known suffix of the stack is as follows:
 ## label_longident COLON 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE LIDENT COMMA LIDENT COLON UIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -6396,13 +5685,6 @@ implementation: LBRACE PUB LIDENT EQUAL WITH
 ##
 ## The known suffix of the stack is as follows:
 ## EQUAL 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LBRACE PUB LIDENT EQUALGREATER UIDENT RPAREN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -7521,81 +6803,6 @@ implementation: LET LIDENT LPAREN WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LET LIDENT UNDERSCORE COLON UNDERSCORE EQUALGREATER UIDENT RPAREN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET LIDENT UNDERSCORE COLON UNDERSCORE EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET LIDENT UNDERSCORE COLON UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Defining a function?
-Expecting "=>" to start the function body
-
-implementation: LET LIDENT UNDERSCORE COLON WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET LIDENT UNDERSCORE EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting an expression as function body
-
-implementation: LET LIDENT UNDERSCORE LPAREN TYPE LIDENT RPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET LIDENT UNDERSCORE LPAREN TYPE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET LIDENT UNDERSCORE LPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET LIDENT UNDERSCORE UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET LIDENT UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Defining a function?
-Expecting one of the following:
-  - "=>" to start the function body
-  - an identifier to add a function parameter
-  - ":" to specify the return type
-
 implementation: LET LIDENT WITH 
 ##
 ## Ends in an error in state: 1726.
@@ -7721,20 +6928,6 @@ implementation: LET MODULE UIDENT EQUAL WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LET MODULE UIDENT LPAREN RPAREN COLON UIDENT EQUALGREATER UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET MODULE UIDENT LPAREN RPAREN COLON UIDENT EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: LET MODULE UIDENT LPAREN RPAREN COLON UIDENT SEMI 
 ##
 ## Ends in an error in state: 2585.
@@ -7794,20 +6987,6 @@ implementation: LET MODULE UIDENT LPAREN RPAREN COLON WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LET MODULE UIDENT LPAREN RPAREN EQUALGREATER UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET MODULE UIDENT LPAREN RPAREN EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: LET MODULE UIDENT LPAREN RPAREN WITH 
 ##
 ## Ends in an error in state: 2548.
@@ -7854,13 +7033,6 @@ implementation: LET REC ASSERT
 ##
 ## The known suffix of the stack is as follows:
 ## LET option(item_extension_sugar) rec_flag 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LET UIDENT UNDERSCORE WHEN 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -7983,27 +7155,6 @@ implementation: LPAREN BANG WITH
 ##
 ## The known suffix of the stack is as follows:
 ## BANG 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FOR UNDERSCORE IN UIDENT TO WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FOR UNDERSCORE IN UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FOR UNDERSCORE IN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -8191,55 +7342,6 @@ implementation: LPAREN FUN LPAREN WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: LPAREN FUN UNDERSCORE EQUALGREATER STRING WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FUN UNDERSCORE EQUALGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FUN UNDERSCORE LPAREN TYPE LIDENT RPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FUN UNDERSCORE LPAREN TYPE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FUN UNDERSCORE LPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FUN UNDERSCORE UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN FUN UNDERSCORE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: LPAREN FUN WITH 
 ##
 ## Ends in an error in state: 1267.
@@ -8249,20 +7351,6 @@ implementation: LPAREN FUN WITH
 ##
 ## The known suffix of the stack is as follows:
 ## FUN 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN IF UIDENT UIDENT ELSE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN IF UIDENT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -8322,13 +7410,6 @@ implementation: LPAREN LBRACELESS WITH
 ##
 ## The known suffix of the stack is as follows:
 ## LBRACELESS 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: LPAREN LBRACKET DOTDOTDOT UIDENT COMMA 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -9196,27 +8277,6 @@ implementation: TRUE DOT LIDENT EQUAL WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: TRUE DOT LPAREN UIDENT RPAREN EQUAL WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: TRUE DOT LPAREN UIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: TRUE DOT LPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: TRUE DOT UIDENT DOT WITH 
 ##
 ## Ends in an error in state: 966.
@@ -9863,13 +8923,6 @@ implementation: TYPE LIDENT EQUAL UNDERSCORE EQUAL BAR WITH
 
 Variant constructors need to begin with an uppercase character
 
-implementation: TYPE LIDENT EQUAL UNDERSCORE EQUAL LBRACE LIDENT COLON LBRACE DOTDOT RBRACE AS QUOTE LIDENT LBRACKETAT AND RBRACKET SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: TYPE LIDENT EQUAL UNDERSCORE EQUAL LBRACE WITH 
 ##
 ## Ends in an error in state: 3633.
@@ -9988,34 +9041,6 @@ implementation: TYPE LIDENT EQUAL WITH
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
-implementation: TYPE LIDENT MINUS QUOTE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: TYPE LIDENT MINUS WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: TYPE LIDENT PLUS QUOTE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: TYPE LIDENT PLUS WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
 implementation: TYPE LIDENT PLUSEQ BAR WITH 
 ##
 ## Ends in an error in state: 2611.
@@ -10064,13 +9089,6 @@ implementation: TYPE LIDENT PLUSEQ WITH
 ##
 ## The known suffix of the stack is as follows:
 ## TYPE nonrec_flag LIDENT type_variables_with_variance PLUSEQ 
-##
-
-<YOUR SYNTAX ERROR MESSAGE HERE>
-
-implementation: TYPE LIDENT QUOTE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 <YOUR SYNTAX ERROR MESSAGE HERE>
@@ -10486,20 +9504,6 @@ implementation: UIDENT INFIXOP4 WITH
 
 Expecting an expression
 
-implementation: UIDENT LBRACKETAT UNDERSCORE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting an attribute id
-
-implementation: UIDENT LBRACKETAT WITH UIDENT RBRACE 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting "]"
-
 implementation: UIDENT LESS WITH 
 ##
 ## Ends in an error in state: 2491.
@@ -10520,13 +9524,6 @@ implementation: UIDENT LESSDOTDOTGREATER WITH
 ##
 ## The known suffix of the stack is as follows:
 ## unattributed_expr LESSDOTDOTGREATER 
-##
-
-Expecting an expression
-
-implementation: UIDENT LESSGREATER WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##
 
 Expecting an expression
@@ -10763,66 +9760,7 @@ implementation: UIDENT STAR WITH
 
 Expecting an expression
 
-implementation: UIDENT TRUE DOT LBRACE UIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting one of the following:
-  - an infix operation to connect two expressions
-  - "}" to close the block
-
-implementation: UIDENT TRUE DOT LBRACE WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting an expression
-
-implementation: UIDENT TRUE DOT LBRACKET UIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting one of the following:
-  - an infix operation to connect two expressions
-  - "}" to close the block
-
-implementation: UIDENT TRUE DOT LBRACKET WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting an expression
-
-implementation: UIDENT TRUE DOT LPAREN UIDENT SEMI 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting one of the following:
-  - an infix operation to connect two expressions
-  - ")" to close the block
-
-implementation: UIDENT TRUE DOT LPAREN WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting an expression
-
-implementation: UIDENT TRUE DOT WITH 
-##
-## WARNING: This sentence does NOT end with a syntax error, as it should.
-##
-
-Expecting one of the following:
-  - an identifier to access a member of an object
-  - "[" + expression + "]" to access an element of a list
-  - "(" + expression + ")"
-  - "{" + expression + "}"
-
-implementation: WITH 
+implementation: WITH
 ##
 ## Ends in an error in state: 0.
 ##
