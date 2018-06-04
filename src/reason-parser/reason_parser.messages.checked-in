@@ -459,6 +459,7 @@ parse_pattern: LBRACKET UNDERSCORE RPAREN
 <YOUR SYNTAX ERROR MESSAGE HERE>
 
 parse_pattern: LBRACKET UNDERSCORE SEMI RBRACE 
+
 ##
 ## WARNING: This sentence does NOT end with a syntax error, as it should.
 ##

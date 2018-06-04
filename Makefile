@@ -36,7 +36,7 @@ testFormat: build clean-tests
 
 all_errors:
 	@ echo "Regenerate all the possible error states for Menhir."
-	@ echo "Warning: This will take a while and use a lot of CPU and memory."
+	@ echo "Warning: This will take a while and use a lot of CPU and memory (~9GB)"
 	@ echo "---"
 	menhir --explain --strict --update-errors src/reason-parser/reason_parser.messages.checked-in --unused-tokens src/reason-parser/reason_parser.mly --list-errors > src/reason-parser/reason_parser.messages.checked-in.new
 	@ echo "done"
